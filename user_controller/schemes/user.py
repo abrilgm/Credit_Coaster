@@ -1,8 +1,10 @@
-from schemas.account import Account
+
+from Account import Account
 
 
-class User
-    def __init__(self, name: str, birthdate: str, phone: str):
+class User:
+    
+    def __init__(self, name: str, birthdate: str, phone: str, age:str):
         self.account = None
         self.name = name
         self.birthdate = birthdate
@@ -13,7 +15,7 @@ class User
     def create_account(self):
          if self.account:
              return
-        self.account = Account(self)
+             self.account = Account(self)
     
     
 user = User("Name","01-01-01","123123123")
