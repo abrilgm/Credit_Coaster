@@ -30,5 +30,10 @@ class TransactionController:
         # Return transaction
         return tran
 
-    
+    # Código para probar la función make_purchase()
+acc = Account(12345, "Ana", "Juarez", 1000.0)
+transaction = TransactionController.make_purchase("1234567890123456", "12/23", "1234", "123", 500.0, acc)
+
+# Imprimir el mensaje con el monto retirado de la cuenta
+print(f"Retiraste {transaction.amount} de tu cuenta")
 
