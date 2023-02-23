@@ -1,3 +1,4 @@
+import user as user
 class Account:
     def __init__(self, user, card, balance, cut, card_type):
         self.user = user
@@ -6,8 +7,11 @@ class Account:
         self.cut = cut
         self.type = card_type
 
+
     def get_user_info(self):
-        return self.user.name, self.user.address, self.user.phone
+        # TODO: Tienes que agreager la opcion de addres y la de phone 
+        return self.user.name # self.user.address, self.user.phone
+        
 
     def get_card_info(self):
         return self.card.number, self.card.exp_date, self.card.cvv

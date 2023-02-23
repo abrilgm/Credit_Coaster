@@ -18,6 +18,5 @@ class User:
              self.account = Account(self)
     
     
-user = User("Name","01-01-01","123123123")
+user = User("Name","01-01-01","123123123","23")
 user.create_account()
-user.account.balance
