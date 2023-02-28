@@ -11,7 +11,7 @@ class UserController:
     def create_user_with_account(name, birthdate, phone, age):
         """Create a new User instance with an associated Account instance."""
         user = User(name=name, birthdate=birthdate, phone=phone, age=age)
-        account = Account(user=user)
+        account = account(user=user)
         user.account = account
         return user
 
